@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Samman Bhetwal</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Samman Bhetwal</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container-main main_img">
+      <img src="./assets/profile-pic.jpg" alt="Samman Bhetwal profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Samman Bhetwal</h1>
+      <p class="section__text__p2">Software Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-1" onclick="window.open('./assets/Samman_Bhetwal.pdf')">
+          Download CV
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/sammanbhetwal/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/SAM815'" />
+        <img src="./assets/devpost2.png" alt="DevPost Profile" class="icon"
+          onclick="location.href='https://devpost.com/sammanbhetwal2025?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Explore </p>
+    <h1 class="title">My Background</h1>
+    <div class="section-container">
+      <div class="section__pic-container" style="position: relative; left: 40px;">
+        <img src="./assets/about-pic.jpg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>3+ years <br />Full Stack Development<br />Software Development<br />Data Analysis</p>
+
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.Sc. Bachelors Degree</p>
+
+          </div>
+        </div>
+        <div class="text-container">
+          <p>I am an empathetic and innovative software developer with 3+ years of academic and competitive experience
+            in creating software, web applications, and data-driven solutions. As a Microsoft-Certified UX Designer, I
+            craft human-centered designs and
+            turn them into impactful products. I adapt quickly, embrace new technologies, and continuously upskill to
+            build solutions that truly meet user needs. Let’s connect!</p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1"> My </p>
+    <h1 class="title">Certifications</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/microsoft.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Microsoft UX Design</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-1" onclick="window.open('./assets/Microsoft cert.pdf')">
+              View
+            </button>
+          </div>
+
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/udemy.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">
+            Level Up Your UI/UX: Interactive Design & Prototyping Figma</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-1" onclick="window.open('./assets/udemy certificate.pdf')">
+              View
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#work'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Software Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C++</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Java/Android </h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Prolog</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+
+
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Web Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Vue</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Node JS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Express JS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MongoDB</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>SQLite</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Data Analysis and Machine Learning</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PySpark</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Scala</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Hadoop</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+  </section>
+
+  <section id="work">
+    <h1 class="title">Work Experience</h1>
+    <p class="section__text__p1">Timeline</p>
+    <ul class="timeline">
+      <!-- Item 1 -->
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Ramapo ITS</span>
+            <span class="time-wrapper"><span class="time">Feb 2022 – Present</span></span>
+          </div>
+          <div class="desc">
+            • Resolved 1,000+ technical support tickets with patience and empathy, effectively communicating with users
+            daily to diagnose
+            and address issues related to user accounts, system maintenance, hardware upgrades, and software
+            installations.
+
+
+
+          </div>
+        </div>
+      </li>
+
+      <!-- Item 2 -->
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Ramapo Residence Life</span>
+            <span class="time-wrapper"><span class="time">Feb 2023 – Present
+              </span></span>
+          </div>
+          <div class="desc">
+            <br />• Led and supported a residential community of over 1,000 residents, trained 15+ new RAs, and
+            conducted administrative
+            tasks and over $4,000 in programming funds to successfully plan and execute 50+ community-building events.
+
+
+          </div>
+      </li>
+
+      <!-- Item 3 -->
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Peer Career Coordinator</span>
+            <span class="time-wrapper"><span class="time">September 2021 – Aug 2022</span></span>
+          </div>
+          <div class="desc">• Approved first-year resumes according to the Ramapo resume template and provide guidance
+            through email.
+            <br />• Scheduled and took virtual VMock resume review appointments with students struggling to get their
+            desired score and help those craft better resumes.d.
+
+            <br />• Researched an employer’s trust score, look out for any red flags, communicate with them about their
+            job postings on Ramapo’s handshake account and proceed accordingly.
+            <br />• Provided excellent customer service by being the first point of contact for students and staff when
+            they enter the office and
+            field communication between employers, career advisors, students, faculties, and third-party individuals.
+
+
+          </div>
+        </div>
+      </li>
+
+
+    </ul>
+  </section>
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/yahtzee.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Yahtzee/C++</h2>
+          <p>C++ implementation of the popular dice game Yahtzee which supports both human and computer players.
+            Features include game serialization, AI assistance, and a structured tournament mode.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/SAM815/cmps-366-yahtzee-cpp'">
+              Github
+            </button>
+
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/yahtzee.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Yahtzee/Java</h2>
+          <p>Digital implementation of the classic Yahtzee game, developed in Java for Android. Features include
+            detailed scoring system, helpful hints, and save/load functionality.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/SAM815/cmps-366-java-yahtzee'">
+              Github
+            </button>
+
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/ShareBowl.jpeg" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Roadrunner-Mart</h2>
+          <p> A full-stack social platform for students to buy and sell items featuring clear UX, authentication, and
+            Stripe for secure transactions.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/SAM815/Roadrunner-Mart'">
+              Github
+            </button>
+
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="awardWinner">
+            <p>HackRU Winner</p>
+          </div>
+          <div class="article-container">
+            <img src="./assets/Glee.jpg" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Glee</h2>
+          <p>Social media website to share memes; Won 1st place at Rutgers Hackathon 2023.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/SAM815/Social-Media-App'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/Dd1TWaOf71E'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Student Health Risk Prediction</h2>
+          <p>Analyzed health factors and built ML models, achieving 89.5% accuracy, uncovering links between sleep
+            deprivation, stress, and health outcomes.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/SAM815/Student-Health-Analysis'">
+              Github
+            </button>
+            <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#work'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:ashres19@gmail.com">sammanbhetwal2025@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/sammanbhetwal/">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Copyright &#169; 2024 Samman Bhetwal. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
